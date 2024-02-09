@@ -1,0 +1,56 @@
+DiscardNonMatching;
+
+// Improve the ranking to be more inclined towards sites similar
+// to Printables.
+Like(Site("printables.com"));
+
+/*
+   Boost the following sites to the top of the search results
+   when the user is searching for 3D printing related content.
+ */
+
+Rule {
+	Matches {
+		Site("|makerworld.com|"),
+	},
+	Matches {
+		Site("|thingiverse.com|"),
+	},
+	Matches {
+		Site("|thangs.com|"),
+	},
+	Matches {
+		Site("|cults3d.com|"),
+	},
+	Matches {
+		Site("|octoprint.org|"),
+	},
+	Matches {
+		Site("|tindie.com|"),
+	},
+	Matches {
+		Site("|hackaday.io|"),
+	},
+	Matches {
+		Site("|ultimaker.com|"),
+	},
+	Matches {
+		Site("|yeggi.com|"),
+	},
+	Matches {
+		Site("|myminifactory.com|"),
+	},
+	Matches {
+		Site("|pinshape.com|"),
+	},
+	Matches {
+		Site("|youmagine.com|"),
+	},
+	Matches {
+		Site("|printables.com|"),
+	},
+	Matches {
+		Site("|tinkercad.com|"),
+	}
+	Action(Boost(0))
+};

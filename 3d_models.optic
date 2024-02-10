@@ -25,12 +25,14 @@ Rule {
 	Matches {
 		Site("|octoprint.org|"),
 	},
-	Matches {
+/*
+        Matches {
 		Site("|tindie.com|"),
 	},
 	Matches {
 		Site("|hackaday.io|"),
 	},
+*/
 	Matches {
 		Site("|ultimaker.com|"),
 	},
